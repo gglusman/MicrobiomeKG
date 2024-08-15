@@ -1,0 +1,41 @@
+# Version 0.3 (08/04/24)
+
+# Use '~' for 'None'
+
+data_location :
+  path_to_xlsx : supplementary_data/3Wilmanski2019.xls
+  sheet_to_use : proteomics_analysis
+  header : 1
+
+provenance : 
+ publication : 'PMID:31477923'
+ publication_name : 'Blood metabolome predicts gut microbiome a-diversity in humans'
+ authors : 'Tomasz Wilmanski et. al. (2019)'
+ url : https://static-content.springer.com/esm/art%3A10.1038%2Fs41587-019-0233-9/MediaObjects/41587_2019_233_MOESM5_ESM.xls
+ sheet_name : proteomics_analysis
+ curator_name : Skye Goetz (ISB)
+
+subject : 
+ name_column_name : analyte
+
+predicate : 
+ value : biolink:correlated_with
+
+object : 
+ curie : 'EUPATH:0009259'
+
+attributes : 
+ n :
+   value : 939
+ p :
+   column_name : corr_adj_pval
+ relationship_strength : 
+   column_name : Adj_Beta_coeff
+ relationship_type : 
+   value : OLS_regression
+ p_correction_method : 
+   value : benjamini_hochberg
+ knowledge_level : 
+   value : statistical_association
+ agent_type : 
+   value :  data_analysis_pipeline
