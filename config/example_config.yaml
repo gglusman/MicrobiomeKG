@@ -1,0 +1,63 @@
+# Version 0.4 (08/15/24) Skye Goetz (ISB)
+
+# Use '~' for 'None'
+
+data_location :
+  path_to_xlsx : supplementary_data/random_location.xlsx
+  sheet_to_use : Sheet1
+  header : 0
+  
+provenance : 
+ publication : PMC:nnnnn
+ publication_name : Lorem ipsum dolor sit amet, consectetur adipiscing elit
+ authors : Albert Einstein et. al. (2024)
+ url : some_random_long_url_where_you_downloaded_the_table_from
+ sheet_name : Lorem ipsum dolor sit amet
+ curator_name : Skye Goetz (ISB)
+
+subject : 
+ curie : # CURIE
+ # value : # VALUE FOR ENTIRE COLUMN
+ # curie_column_name : # COLUMN CONTAINING CURIES
+ # name_column_name : # COLUMN CONTAINING STRINGS TO MAP TO CURIES
+ text_replacements :
+  - one : 
+    pattern : '_' 
+    replacement : ~
+ prefix : 
+  - one : 
+    prefix : 'PREFIX:'
+
+predicate : 
+ value : biolink:something_with
+
+object:
+ value : 
+
+attributes : 
+ p :
+   value : # VALUE FOR ENTIRE COLUMN
+   # column_name :  # COLUMN CONTAINING VALUES
+ relationship_strength :
+   column_name : 
+ n :
+   value : 87
+ relationship_type : 
+   column_name : Lorem 
+ p_correction_method : 
+   value : Ipsum
+ knowledge_level : 
+   value : Dolor Sit
+ agent_type : 
+   value : Amet
+
+cutoff :
+ mode : if_equals
+ column : some_column_name
+ value : Lorem ipsum dolor sit amet
+
+sections :
+ - one : 
+ # OPTIONALLY NEXT ANY FIELD ABOVE UNDER SECTIONS TO CREATE A NEW ONE
+   subject :
+     curie : # ANOTHER CURIE
