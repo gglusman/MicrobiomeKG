@@ -10,8 +10,6 @@ import dill
 import subprocess
 import pandas as pd
 
-pd.set_option('display.max_columns', None)
-
 def load_pickle(file_path):
     with gzip.open(file_path, 'rb') as file:
         return dill.load(file)

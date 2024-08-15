@@ -7,8 +7,6 @@ import glob
 import dill
 import pandas as pd
 
-pd.set_option('display.max_columns', None)
-
 cwd = os.getcwd()
 BABEL_directory_list = [
     # [ LIST OF PATHS TO DIRECTORIES CONTAINING MAPPING DATA ]

@@ -7,8 +7,6 @@ import subprocess
 import pandas as pd
 from tqdm import tqdm
 
-pd.set_option('display.max_columns', None)
-
 cwd = os.getcwd()
 try:
     dir_path = sys.argv[1]
