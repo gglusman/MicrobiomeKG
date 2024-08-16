@@ -52,7 +52,7 @@ attributes :
    value : Amet
 
 cutoff :
- mode : if_equals
+ mode : if_equals # greater_than_or_equal_to / less_than_or_equal_to
  column : some_column_name
  value : Lorem ipsum dolor sit amet
 
