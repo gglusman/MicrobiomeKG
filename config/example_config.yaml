@@ -6,6 +6,7 @@ data_location :
   path_to_xlsx : supplementary_data/random_location.xlsx
   sheet_to_use : Sheet1
   header : 0
+  # last_line : # LINE IN EXCEL TO STOP AT
   
 provenance : 
  publication : PMC:nnnnn
