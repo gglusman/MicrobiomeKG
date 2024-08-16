@@ -16,7 +16,7 @@ provenance :
  curator_name : Skye Goetz (ISB)
 
 subject : 
- curie : # CURIE
+ curie : # CURIE FOR ENTIRE COLUMN
  # value : # VALUE FOR ENTIRE COLUMN
  # curie_column_name : # COLUMN CONTAINING CURIES
  # name_column_name : # COLUMN CONTAINING STRINGS TO MAP TO CURIES
